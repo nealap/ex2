@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Exam 2 Assignment</title>
+    <link rel="stylesheet" type="text/css" href="styles/Exam2.css" />
+    <script src="js/Exam2.js"></script>
+</head>
+
+<body>
+<section id="title">
+    <h1>Exam #2 Problem - Neal Patel</h1>
+    <select onchange="MenuChoice()" id="menu">
+        <option>Please Select an Option</option>
+        <option>Display Category List</option>
+        <option>Add Product Category</option>
+        <option>Update Category Description</option>
+        <option>Delete A Category</option>
+        <option>About</option>
+    </select>
+</section>
+
+<section id="section1" class="section1">
+    <h2>Category List</h2>
+    <button onclick="CategoryList()">Display Category List</button>
+    <br>
+    <br>
+    <p id="catlist"></p>
+</section>
+
+<section id="section2" class="section2">
+        <h2>Add Product Category</h2>
+        <h3>New Product Category Information</h3>
+        <br>
+        <label>Enter Category Name:</label>
+        <input type="text" id="catname">
+        <br>
+        <label>Enter Category Description:</label>
+        <input type="text" id="catdesc">
+        <br>
+        <button onclick="AddCategory()">Add Category</button>
+        <br>
+        <br>
+        <label id="aresult"></label>
+</section>
+
+<section id="section3" class="section3">
+        <h2>Update Category Description</h2>
+        <h3>New Category Description</h3>
+        <br>
+        <label>Enter Category ID:</label>
+        <input type="text" id="catidd">
+        <br>
+        <label>Enter New Category Description:</label>
+        <input type="text" id="newdesc">
+        <br>
+        <button onclick="UpdateCatDesc()">Update Description</button>
+        <br>
+        <label id="bresult"></label>
+</section>
+
+<section id="section4" class="section4">
+        <h2>Delete a Category</h2>
+        <h3>Category's Information</h3>
+        <br>
+        <label>Category ID to Be Deleted:</label>
+        <input type="text" id="catedelete">
+        <br>
+        <button onclick="DeleteCategory()">Delete Category</button>
+        <br>
+        <label id="cresult"></label>
+</section>
+
+<section id="section5" class="section5">
+    <h2>About</h2>
+    <h4>Application Created by: Neal Patel</h4>
+    <h4>Email: nealap@uab.edu</h4>
+    <h4>Exam #2 Problem</h4>
+</section>
+
+</body>
+</html>
